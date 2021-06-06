@@ -1,0 +1,208 @@
+body{
+    font-family: 'Roboto Mono', monospace;;
+
+}
+
+.bg-template{
+    height: 600px;
+    background-image: url('../img/samsung.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container-fluid{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+h1,h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+#heading{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top:100px ;
+    color: white;
+    
+}
+
+#heading h1,h2 {
+    letter-spacing: 1px;
+    font-size: 50px;
+
+}
+#forms{
+    padding: 0;
+    margin-top: 50px;
+}
+
+#forms input[type=search]{
+    width: 50%;
+    border:1px solid #0117FA;
+}
+.form-control{
+    border:1px solid #0117FA ;
+}
+
+
+.btn-outline-success {
+    border: 1px solid #0117FA;
+    color: white;
+    background-color: slateblue;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:rgba(0,0,0,1) ;
+    font-weight: bold;
+}
+.footer-copyright.text-center.py-3{
+    font-weight: bold;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+
+.col-md-4{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.col-md-8{
+    width: 100%;
+    height: auto;
+    background-color: #F2F3F4 ;
+}
+.col-md-4 img{
+    width: 50%;
+    height: auto;
+    
+
+}
+
+.col-md-8 h1{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #2C3E50;
+    padding: 1px;
+}
+#btnn{
+    width: 100%;
+    display: inline;
+    
+}
+.btn.btn-primary{
+    
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #FA8901;
+    border: 1px solid #FA8901;
+    margin: 20px;
+
+}
+
+.table-responsive{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #2C3E50;
+    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+
+.table-responsive th,td {
+    padding: 5px;
+    text-align: left;
+    
+}
+#highlightheading{
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+}
+#para{
+
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: #2C3E50;
+}
+
+
+#reviews{
+    background-color: #F2F3F4;
+    margin-top: 50px;
+    padding: 10px;
+}
+#reviewtable{
+    background-color: #F2F3F4;
+}
+section{
+    margin-top: 10px;
+}
+
+.col-md-6{
+    width: 100%;
+    height: auto;
+}
+.col-md-6:nth-child(1){
+    background-color:white;
+    
+}
+
+.col-md-6:nth-child(2){
+    background-color:#F2F3F4;
+    border-radius: 2%;
+}
+
+.img-fluid{
+    width: 90%;
+    height: auto;
+    border: 2px   #F2F3F4;
+    border-radius: 70%;
+
+}
+
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.col-md-6 p{
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+    color:#2C3E50 ;
+}
+
+.first{
+    font-size: 50px;
+}
+
+.form-group{
+    font-family: 'Merriweather', serif
+}
+
+.btn.btn-secondary{
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 1px solid slateblue;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+.btn.btn-secondary:hover{
+    background-color: slateblue;
+    color: white;
+}
+
+#logo{
+    border-radius: 0;
+    padding: 0;
+}

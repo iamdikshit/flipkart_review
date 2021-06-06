@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block head %}
+        <title>Result </title>
+{% endblock %}
+{% block content %}
+
+
+
+
+          <section>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <img src="{{ reviews[-1].img_link }}" alt="">
+                          <div class="container" id = "btnn">
+                          <center><a href= "{{ reviews[-1].productLink }}"  class="btn btn-primary">Buy now</a></center>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                          <h1>{{ reviews[-1].title }}</h1>
+                          <div class="container">
+                            <table class="table-responsive">
+                                
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Ratings</th>
+                                    <td>{{ reviews[-1].ratings }}</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Reviews</th>
+                                    <td>{{ reviews[-1].reviews_no }}</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Discount</th>
+                                    <td>{{ reviews[-1].discount }}</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Price</th>
+                                    <td>{{ reviews[-1].price }}</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Actual Price</th>
+                                    <td>{{ reviews[-1].actual_price }}</td>
+                                    
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                              <!-- ------------- highlight ---------- -->
+
+                              <div class="container" id = "highlight">
+                                  <h1 id="highlightheading">Highlights</h1>
+                                  <p id ="para">{{ reviews[-1].highlight }}</p>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- ----------------------Review section------------------->
+
+          <section>
+                <div class="container" id = "reviews">
+                    <div class="container">
+                        <h1>Reviews</h1>
+                    </div>
+                    
+                        <table class="table-responsive table-bordered">
+                            <thead>
+                              <tr>
+<!--                                <th scope="col">S.no</th>-->
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Ratings</th>
+                                <th scope="col">Comment Heading</th>
+                                <th scope="col">Comments</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+
+                            {% for review in reviews[:-2]: %}
+                              <tr>
+<!--                                <th scope="row">{{ count }}</th>-->
+                                <td>{{review.Product}}</td>
+                                <td>{{review.Name}}</td>
+                                <td>{{review.Rating}}</td>
+                                <td>{{review.CommentHead}}</td>
+                                <td>{{review.Comment}}</td>
+                              </tr>
+
+                            {% endfor %}
+                            </tbody>
+                          </table>
+                    
+                </div>    
+          </section>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+        <title>Flipkart Review </title>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+          <section class="bg-template">
+            <div class="container-fluid">
+              <div class="container" id = "heading">
+                <h1>Worried about online shoping?</h1>
+                <h2>We are providing Flipkart Product Review...</h2>
+                <p>All type of product reviews. Just search and find your product</p>
+                <div class="container" id="forms">
+                <form class="form-inline my-2 my-lg-0" action="/result" method="POST">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name  = "content" id = "content">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+              </div>
+
+            </div>
+          </section>
+
+
+{% endblock %}
